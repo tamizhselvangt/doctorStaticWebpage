@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar with Logo and List</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        padding: 1rem 2rem;
+        top: 0;
+        left: 0;
+        position: absolute;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        width: 150px;
+        height: auto;
+        margin-right: 1rem;
+      }
+
+      .logo-text {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .nav-list {
+        list-style: none;
+        display: flex;
+      }
+
+      .nav-list li {
+        margin-left: 2rem;
+      }
+
+      .nav-list a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+      }
+
+      .nav-list a:hover {
+        color: #ffd700;
+      }
+
+      .main-title {
+        color: white;
+        text-align: center;
+        align-items: center;
+        font-size: 4rem;
+        margin-top: 100px;
+        top: 100px;
+        left: 20%;
+        display: flex;
+        position: absolute;
+      }
+
+      .about {
+        display: flex;
+        align-items: center;
+        color: black;
+        font-size: 30px;
+        text-align: justify;
+        padding: 30px;
+      }
+
+      .about-content {
+        padding: 20px;
+        font-weight: 300;
+      }
+      .doctor {
+        width: 40%;
+        height: 40%;
+        border-radius: 20px;
+      }
+      .backround-image {
+        width: 100%;
+        height: 700px;
+        display: block;
+      }
+
+      header {
+        position: relative;
+        width: 100%;
+      }
+
+      h2 {
+        padding-top: 5%;
+        text-align: center;
+        font-size: 30px;
+      }
+
+      .service-image {
+        width: 33.33%;
+        height: 30%;
+        padding: 30px;
+        border-radius: 20px;
+      }
+
+      .service {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30;
+      }
+
+      form {
+        margin-top: 20px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      button {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        align-items: center;
+      }
+      button:hover {
+        background-color: #555;
+      }
+
+      .form {
+        padding-left: 30%;
+        padding-right: 20%;
+      }
+      /* * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        width: 150px;
+        display: flex;
+        justify-content: center;
+      } */
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="assets/medical-stethoscope-isolated-with-black-background-medical-concept-stethoscope-black-background-with-space-text-health-concept-medical-conceptual.jpg"
+        alt="bacround image"
+        class="backround-image"
+      />
+
+      <nav class="navbar">
+        <div class="logo">
+          <img src="assets/logo.png" alt="Logo" />
+        </div>
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-title">
+      <p class="main">
+        Top Doctor Websites That Have a<br />
+        Good Looking Design
+      </p>
+    </div>
+    <h2>About US</h2>
+    <div class="about">
+      <p class="about-content">
+        Their call-to-action is repeated across the website for a better
+        conversion rate. Also, this custom website helps visitors to find
+        doctors nearby. Lifecare offers a layout with plenty of white space, so
+        all of the features are easy to find.
+      </p>
+      <img src="assets/doc.jpg" alt="Doctor image" class="doctor" />
+    </div>
+
+    <h2>Services</h2>
+    <div class="service">
+      <img
+        src="assets/pexels-chokniti-khongchum-1197604-2280549.jpg"
+        alt="service1"
+        class="service-image"
+      />
+      <img
+        src="assets/pexels-pixabay-139398.jpg"
+        alt="service2"
+        class="service-image"
+      />
+      <img
+        src="assets/pexels-pixabay-236380.jpg"
+        alt="service3"
+        class="service-image"
+      />
+    </div>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form class="form">
+        <input type="text" placeholder="First Name" required />
+        <input type="text" placeholder="Last Name" required />
+        <input type="text" placeholder="City" required />
+        <input type="text" placeholder="Address" required />
+        <textarea placeholder="Requirement" required></textarea>
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>Webpage is developed by Tamizhselvan</p>
+    </footer>
+  </body>
+</html>
